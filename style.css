@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 100px; /* space for fixed footer */
+}
+
+/* ─── Navbar ─────────────────────────────────── */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.6rem 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0.7rem 1.5rem;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e2e8f0;
+}
+
+/* ─── Hero Section ───────────────────────────── */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.hero-logo img {
+  width: 580px;
+  max-width: 90vw;
+  height: auto;
+}
+
+.version {
+  font-size: 4.5rem;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  white-space: nowrap;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.date {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.cta-button {
+  margin-top: 1.2rem;
+  padding: 0.7rem 1.5rem;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.scroll-indicator {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  animation: bounce 1.5s infinite;
+}
+
+/* ─── Countdown ──────────────────────────────── */
+.countdown-section {
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.countdown-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.countdown-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+}
+
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.timer div {
+  text-align: center;
+}
+
+.timer span {
+  display: block;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+/* ─── Footer ─────────────────────────────────── */
+
+
+.footer-image-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.footer-image-fixed img {
+  display: block;
+  width: 100%;
+  height: 100px; /* 🔁 Set to your image’s exact height */
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+
+/* ─── Highlights ─────────────────────────────── */
+/* ─── Highlights Section ───────────────────────────── */
+.highlights {
+  background: white;
+  padding: 4rem 1rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.highlight {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
+}
+
+.highlight-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.highlight.reverse .highlight-inner {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .highlight-inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .highlight.reverse .highlight-inner {
+    flex-direction: row-reverse;
+  }
+}
+
+.step {
+  font-size: 5rem;
+  font-weight: 800;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  flex-shrink: 0;
+  width: 100px;
+  text-align: center;
+}
+
+.highlight-text {
+  flex: 1;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .highlight-text {
+    text-align: left;
+  }
+}
+
+.highlight-text h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.highlight-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  font-weight: 400;
+}
+
+
+/* ─── Mobile Responsive Tweaks ──────────────── */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-links {
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  /* Hero Section */
+  .hero-logo img {
+    width: 280px;
+  }
+
+  .version {
+    font-size: 2.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .scroll-indicator {
+    font-size: 1.4rem;
+  }
+
+  /* Countdown */
+  .timer {
+    font-size: 1.5rem;
+    gap: 0.8rem;
+  }
+
+  .timer span {
+    font-size: 0.75rem;
+  }
+
+  /* Footer */
+  .footer .logos img {
+    height: 50px;
+    max-width: 70px;
+  }
+
+  /* Highlights */
+  .step, .highlight h3 {
+    font-size: 2rem;
+  }
+
+  .highlight p {
+    font-size: 0.95rem;
+  }
+
+  .highlights {
+    padding: 2rem 1rem;
+  }
+}
