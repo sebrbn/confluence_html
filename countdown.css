@@ -142,3 +142,44 @@ body, html {
   padding: 0;
   border: none;
 }
+/* Responsive Fixes for Mobile View */
+@media (max-width: 768px) {
+  .countdown-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .timer {
+    font-size: 2.5rem;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .timer div {
+    min-width: 70px;
+  }
+
+  .timer span {
+    font-size: 0.85rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.4rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-image-fixed img {
+    height: 70px; /* slightly reduced for smaller screens */
+  }
+}
+
